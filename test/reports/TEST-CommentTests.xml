@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Jupiter" name="CommentTests" tests="7" time="0.844" timestamp="2008-09-09T23:04:56">
+  <properties />
+  <testcase classname="CommentTests" name="testToString" time="0.562" />
+  <testcase classname="CommentTests" name="testPluginToComment" time="0.062" />
+  <testcase classname="CommentTests" name="testCommentToPlugin" time="0.015" />
+  <testcase classname="CommentTests" name="testValidComment" time="0.0" />
+  <testcase classname="CommentTests" name="testEmptyContributor" time="0.0" />
+  <testcase classname="CommentTests" name="testEmptyComment" time="0.015" />
+  <testcase classname="CommentTests" name="testCascadeDelete" time="0.016" />
+  <system-out><![CDATA[--Output from testToString--
+--Output from testPluginToComment--
+--Output from testCommentToPlugin--
+--Output from testValidComment--
+--Output from testEmptyContributor--
+--Output from testEmptyComment--
+--Output from testCascadeDelete--
+]]></system-out>
+  <system-err><![CDATA[--Output from testToString--
+--Output from testPluginToComment--
+--Output from testCommentToPlugin--
+--Output from testValidComment--
+--Output from testEmptyContributor--
+--Output from testEmptyComment--
+--Output from testCascadeDelete--
+]]></system-err>
+</testsuite>

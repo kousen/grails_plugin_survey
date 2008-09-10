@@ -1,0 +1,25 @@
+Testsuite: PluginTests
+Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.047 sec
+------------- Standard Output ---------------
+--Output from testToString--
+--Output from testValidPlugin--
+--Output from testBlankName--
+--Output from testBadVersion--
+--Output from testBadRatings--
+--Output from testNegativeTotalVotes--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testToString--
+--Output from testValidPlugin--
+--Output from testBlankName--
+--Output from testBadVersion--
+--Output from testBadRatings--
+--Output from testNegativeTotalVotes--
+------------- ---------------- ---------------
+
+Testcase: testToString took 0 sec
+Testcase: testValidPlugin took 0.016 sec
+Testcase: testBlankName took 0 sec
+Testcase: testBadVersion took 0.015 sec
+Testcase: testBadRatings took 0 sec
+Testcase: testNegativeTotalVotes took 0.016 sec
