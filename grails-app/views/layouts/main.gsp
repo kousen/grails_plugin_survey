@@ -11,6 +11,9 @@
             <img src="${createLinkTo(dir:'images',file:'spinner.gif')}" alt="Spinner" />
         </div>	
         <div class="logo"><img src="${createLinkTo(dir:'images',file:'grails_logo.jpg')}" alt="Grails" /></div>	
-        <g:layoutBody />		
+				<jsec:isLoggedIn>
+  				<div>Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</div>
+				</jsec:isLoggedIn>
+				<g:layoutBody />		
     </body>	
 </html>

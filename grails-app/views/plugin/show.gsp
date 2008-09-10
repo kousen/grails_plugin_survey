@@ -89,6 +89,7 @@
         <g:hiddenField name="id" value="${plugin.id}" />
 				Comment: <g:textField name="comment" value="" />
       </g:formRemote>
+		<jsec:hasRole name="Administrator">
       <div class="buttons">
         <g:form>
         <input type="hidden" name="id" value="${plugin?.id}" />
@@ -96,6 +97,7 @@
         <span class="button"><g:actionSubmit class="delete" onclick="return confirm('Are you sure?');" value="Delete" /></span>
         </g:form>
       </div>
+    </jsec:hasRole>
     </div>
   </body>
 </html>

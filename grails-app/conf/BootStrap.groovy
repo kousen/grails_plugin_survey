@@ -1,3 +1,5 @@
+import org.jsecurity.crypto.hash.Sha1Hash
+
 class BootStrap {
 
      def init = { servletContext ->
@@ -8,7 +10,20 @@ class BootStrap {
               passwordHash: new Sha1Hash("p@ssw0rd").toHex()).save()
           new JsecUserRoleRel(user: adminUser, role: adminRole).save()
         }
+        
+        if (!JsecRole.findByName('User')) {
+					def normalRole = new JsecRole(name: 'User').save()
+					def normalUser = new JsecUser(username:'grails',
+							passwordHash: new Sha1Hash('groovy').toHex()).save()
+					new JsecUserRoleRel(user: normalUser, role: normalRole).save()
+        }
+        
+        if (!Plugin.findByName('test')) {
+        	new Plugin(name:'test',ver:'0.1',description:'test plugin',
+        			rating:3,totalVotes:2).save()
+        }
      }
+     
      def destroy = {
      }
 } 
