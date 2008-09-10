@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>Test results for: </title>
+<link rel="shortcut icon" type="image/x-icon" href="../resources/images/favicon.ico">
+<link rel="icon" type="image/x-icon" href="../resources/images/favicon.ico">
+<link href="../index.html" title="Test Report Overview" rel="contents up">
+<link href="../resources/report.css" type="text/css" rel="stylesheet">
+<script src="../resources/showHide.js" type="text/javascript"></script><script id="scriptResponseBrowser" src="../resources/responseBrowser.js" type="text/javascript"></script>
+</head>
+<body onload="initExpandCollapse('expandPlus.png','expandMinus.png')">
+<blockquote>
+<h4>
+<img alt="ok" src="../resources/images/ok.gif">&nbsp;Plugin basic operations: view list, create new entry, view, edit, delete, view</h4>Test started at Tue Sep 09 20:32:16 EDT 2008, lasting 2954 ms.<br>Source: <span class="location">: </span>
+<br>Base URL (used by <b>invoke</b> steps with a relative URL): <a class="baseUrl" href="http://localhost:8080/survey/" target="_blank">http://localhost:8080/survey/</a>
+</blockquote>
+<p>Expand/Collapse nested steps:<img title="show all nested steps in testspec" alt="show all nested steps in testspec" class="withPointer" src="../resources/images/expandPlus.png" onclick="showAllSubstepsOfTestspec(this)">&nbsp; <img title="hide all nested steps in testspec" alt="hide all nested steps in testspec" class="withPointer" src="../resources/images/expandMinus.png" onclick="hideAllSubstepsOfTestspec(this)"></p>
+<table width="100%" cellspacing="0" border="0" cellpadding="3" class="expanded">
+<tr>
+<th>#</th><th>Result</th><th>Name</th><th>Parameter</th><th>Duration</th>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    1</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>invoke</b>
+<br>
+<br>
+<a target="_blank" href="001_response_invoke.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">-&gt; complete url</td><td class="parameterValue">http://localhost:8080/survey/plugin</td>
+</tr>
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">1860</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    2</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Home</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">15</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    3</b>
+<br>
+<img title="Show/Hide all substeps" alt="Show/Hide all substeps" class="withPointer" onclick="changeLevelOfDetailForGroup(this)" name="collapseButton" src="../resources/images/expandPlus.png"></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>group</b>
+<br>verify Plugin list view with 0 row(s)</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+                    &nbsp;
+                <table width="100%" cellspacing="0" border="0" cellpadding="3" class="collapsed">
+<tr>
+<th>#</th><th>Result</th><th>Name</th><th>Parameter</th><th>Duration</th>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    1</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Plugin List</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    2</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyXPath</b>
+<br>0 row(s) of data expected</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">text</td><td class="parameterValue">0</td>
+</tr>
+<tr>
+<td class="parameterName">xpath</td><td class="parameterValue">count(//div[@class='list']//tbody/tr)</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">16</td>
+</tr>
+</table>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">16</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    4</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickLink</b>
+<br>
+<br>
+<a target="_blank" href="002_response_clickLink.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">New Plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">188</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    5</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Create Plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">15</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    6</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>setInputField</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">name</td><td class="parameterValue">name</td>
+</tr>
+<tr>
+<td class="parameterName">value</td><td class="parameterValue">test_plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">31</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    7</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>setInputField</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">name</td><td class="parameterValue">ver</td>
+</tr>
+<tr>
+<td class="parameterName">value</td><td class="parameterValue">0.1</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    8</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>setInputField</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">name</td><td class="parameterValue">description</td>
+</tr>
+<tr>
+<td class="parameterName">value</td><td class="parameterValue">test plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    9</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>setInputField</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">name</td><td class="parameterValue">rating</td>
+</tr>
+<tr>
+<td class="parameterName">value</td><td class="parameterValue">1</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    10</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>setInputField</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">name</td><td class="parameterValue">link</td>
+</tr>
+<tr>
+<td class="parameterName">value</td><td class="parameterValue">http://grails.org/Plugins/Test+Plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    11</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>setInputField</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">name</td><td class="parameterValue">totalVotes</td>
+</tr>
+<tr>
+<td class="parameterName">value</td><td class="parameterValue">2</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    12</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickButton</b>
+<br>
+<br>
+<a target="_blank" href="003_response_clickButton.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Create</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">297</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    13</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>Detail page</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Show Plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    14</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickLink</b>
+<br>Back to list view<br>
+<a target="_blank" href="004_response_clickLink.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">List</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">63</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    15</b>
+<br>
+<img title="Show/Hide all substeps" alt="Show/Hide all substeps" class="withPointer" onclick="changeLevelOfDetailForGroup(this)" name="collapseButton" src="../resources/images/expandPlus.png"></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>group</b>
+<br>verify Plugin list view with 1 row(s)</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+                    &nbsp;
+                <table width="100%" cellspacing="0" border="0" cellpadding="3" class="collapsed">
+<tr>
+<th>#</th><th>Result</th><th>Name</th><th>Parameter</th><th>Duration</th>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    1</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Plugin List</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    2</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyXPath</b>
+<br>1 row(s) of data expected</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">text</td><td class="parameterValue">1</td>
+</tr>
+<tr>
+<td class="parameterName">xpath</td><td class="parameterValue">count(//div[@class='list']//tbody/tr)</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+</table>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    16</b>
+<br>
+<img title="Show/Hide all substeps" alt="Show/Hide all substeps" class="withPointer" onclick="changeLevelOfDetailForGroup(this)" name="collapseButton" src="../resources/images/expandPlus.png"></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>group</b>
+<br>edit the one element<br>
+<a target="_blank" href="008_response_clickLink.html">last result page of this group</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+                    &nbsp;
+                <table width="100%" cellspacing="0" border="0" cellpadding="3" class="collapsed">
+<tr>
+<th>#</th><th>Result</th><th>Name</th><th>Parameter</th><th>Duration</th>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    1</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickLink</b>
+<br>go to detail view<br>
+<a target="_blank" href="005_response_clickLink.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">1</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">47</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    2</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickButton</b>
+<br>
+<br>
+<a target="_blank" href="006_response_clickButton.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Edit</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">187</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    3</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Edit Plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    4</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickButton</b>
+<br>
+<br>
+<a target="_blank" href="007_response_clickButton.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Update</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">63</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    5</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Show Plugin</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    6</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickLink</b>
+<br>Back to list view<br>
+<a target="_blank" href="008_response_clickLink.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">List</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">47</td>
+</tr>
+</table>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">344</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    17</b>
+<br>
+<img title="Show/Hide all substeps" alt="Show/Hide all substeps" class="withPointer" onclick="changeLevelOfDetailForGroup(this)" name="collapseButton" src="../resources/images/expandPlus.png"></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>group</b>
+<br>verify Plugin list view with 1 row(s)</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+                    &nbsp;
+                <table width="100%" cellspacing="0" border="0" cellpadding="3" class="collapsed">
+<tr>
+<th>#</th><th>Result</th><th>Name</th><th>Parameter</th><th>Duration</th>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    1</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Plugin List</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    2</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyXPath</b>
+<br>1 row(s) of data expected</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">text</td><td class="parameterValue">1</td>
+</tr>
+<tr>
+<td class="parameterName">xpath</td><td class="parameterValue">count(//div[@class='list']//tbody/tr)</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+</table>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    18</b>
+<br>
+<img title="Show/Hide all substeps" alt="Show/Hide all substeps" class="withPointer" onclick="changeLevelOfDetailForGroup(this)" name="collapseButton" src="../resources/images/expandPlus.png"></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>group</b>
+<br>delete the only element<br>
+<a target="_blank" href="010_response_clickButton.html">last result page of this group</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+                    &nbsp;
+                <table width="100%" cellspacing="0" border="0" cellpadding="3" class="collapsed">
+<tr>
+<th>#</th><th>Result</th><th>Name</th><th>Parameter</th><th>Duration</th>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    1</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickLink</b>
+<br>go to detail view<br>
+<a target="_blank" href="009_response_clickLink.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">1</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">46</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    2</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>clickButton</b>
+<br>
+<br>
+<a target="_blank" href="010_response_clickButton.html">Resulting page</a></td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Delete</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">63</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    3</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyXPath</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">regex</td><td class="parameterValue">true</td>
+</tr>
+<tr>
+<td class="parameterName">text</td><td class="parameterValue">.*Plugin.*deleted.*</td>
+</tr>
+<tr>
+<td class="parameterName">xpath</td><td class="parameterValue">//div[@class='message']</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">16</td>
+</tr>
+</table>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">125</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    19</b>
+<br>
+<img title="Show/Hide all substeps" alt="Show/Hide all substeps" class="withPointer" onclick="changeLevelOfDetailForGroup(this)" name="collapseButton" src="../resources/images/expandPlus.png"></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>group</b>
+<br>verify Plugin list view with 0 row(s)</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+                    &nbsp;
+                <table width="100%" cellspacing="0" border="0" cellpadding="3" class="collapsed">
+<tr>
+<th>#</th><th>Result</th><th>Name</th><th>Parameter</th><th>Duration</th>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    1</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyText</b>
+<br>
+</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">nested text</td><td class="parameterValue">Plugin List</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+<tr>
+<td style="border-bottom:1px inset black;" class="light"><b>&nbsp;
+                    2</b></td><td align="center" class="light" style="border-bottom:1px inset black;"><img alt="ok" src="../resources/images/ok.gif"></td><td class="light" valign="top" style="border-bottom:1px inset black;"><b>verifyXPath</b>
+<br>0 row(s) of data expected</td><td class="light" valign="top" style="border-bottom:1px inset black;">
+<div class="parameterWrapper">
+<table cellspacing="0" cellpadding="2">
+<tr>
+<td class="parameterName">text</td><td class="parameterValue">0</td>
+</tr>
+<tr>
+<td class="parameterName">xpath</td><td class="parameterValue">count(//div[@class='list']//tbody/tr)</td>
+</tr>
+</table>
+</div>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+</table>
+</td><td class="light" align="right" valign="top" style="border-bottom:1px inset black;">0</td>
+</tr>
+</table>
+<br>
+<div style="text-align: center">
+<a href="../index.html">Back to Test Report Overview</a>
+</div>
+</body>
+</html>
