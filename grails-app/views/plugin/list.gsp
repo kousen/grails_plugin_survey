@@ -15,6 +15,10 @@
      				<jsec:isLoggedIn>
 		  				<span class="menuButton">Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</span>
 						</jsec:isLoggedIn>
+						<jsec:isNotLoggedIn>
+							<span class="menuButton">Please <g:link controller="auth" action="login">Login</g:link> 
+								or <g:link controller="auth" action="register">Register</g:link></span>
+						</jsec:isNotLoggedIn>
         </div>
         <div class="body">
             <h1>Plugin List</h1>

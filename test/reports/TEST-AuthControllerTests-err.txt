@@ -1,0 +1,5 @@
+--Output from testUsernameAlreadyExists--
+--Output from testUsernameWithoutPassword--
+--Output from testPasswordsDontMatch--
+--Output from testUsernameIsAvailable--
+--Output from testUsernameIsNotAvailable--

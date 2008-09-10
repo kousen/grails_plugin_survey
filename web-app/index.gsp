@@ -1,19 +1,27 @@
 <html>
     <head>
-        <title>Welcome to Grails</title>
+        <title>Welcome to the Grails Plugin Survey</title>
 		<meta name="layout" content="main" />
     </head>
     <body>
-        <h1 style="margin-left:20px;">Welcome to Grails</h1>
-        <p style="margin-left:20px;width:80%">Congratulations, you have successfully started your first Grails application! At the moment
-        this is the default page, feel free to modify it to either redirect to a controller or display whatever
-        content you may choose. Below is a list of controllers that are currently deployed in this application,
-        click on each to execute its default action:</p>
+        <div class="nav">
+            <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
+     				<jsec:isLoggedIn>
+		  				<span class="menuButton">Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</span>
+						</jsec:isLoggedIn>
+						<jsec:isNotLoggedIn>
+							<span class="menuButton">Please <g:link controller="auth" action="login">Login</g:link> 
+								or <g:link controller="auth" action="register">Register</g:link></span>
+						</jsec:isNotLoggedIn>
+        </div>
+         <h1 style="margin-left:20px;">Welcome to the Grails Plugin Survey</h1>
+        <p style="margin-left:20px;width:80%">Here we list the available
+        Grails plugins and let you rate them and add your own (brief) comments.</p>
+        <p style="margin-left:20px;width:80%">You can browse the list, but in order to rate them or comment, 
+        you must register.</p>
         <div class="dialog" style="margin-left:20px;width:60%;">
             <ul>
-              <g:each var="c" in="${grailsApplication.controllerClasses}">
-                    <li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-              </g:each>
+              <li class="controller"><g:link controller="plugin">Go to the list of Plugins</g:link></li>
             </ul>
         </div>
     </body>

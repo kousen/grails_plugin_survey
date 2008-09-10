@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>addComment</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">addComment</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/survey/plugin/list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Plugin List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Welcome to Grails</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=PluginController</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Plugin List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>p@ssw0rd</td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Sign in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Show Plugin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comment</td>
+	<td>test_comment</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test_comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Plugin List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Plugin List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Logged in as: admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=sign out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Welcome to Grails</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

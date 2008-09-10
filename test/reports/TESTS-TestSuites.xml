@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Jupiter" id="0" name="CommentTests" package="" tests="7" time="0.844" timestamp="2008-09-09T23:04:56">
+  <testsuite errors="0" failures="0" hostname="Jupiter" id="0" name="AuthControllerTests" package="" tests="5" time="1.125" timestamp="2008-09-10T22:17:14">
+      <properties />
+
+      <testcase classname="AuthControllerTests" name="testUsernameAlreadyExists" time="0.953" />
+
+      <testcase classname="AuthControllerTests" name="testUsernameWithoutPassword" time="0.016" />
+
+      <testcase classname="AuthControllerTests" name="testPasswordsDontMatch" time="0.016" />
+
+      <testcase classname="AuthControllerTests" name="testUsernameIsAvailable" time="0.015" />
+
+      <testcase classname="AuthControllerTests" name="testUsernameIsNotAvailable" time="0.0" />
+
+      <system-out><![CDATA[--Output from testUsernameAlreadyExists--
+--Output from testUsernameWithoutPassword--
+--Output from testPasswordsDontMatch--
+--Output from testUsernameIsAvailable--
+Available for: test
+--Output from testUsernameIsNotAvailable--
+Available for: test_user
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testUsernameAlreadyExists--
+--Output from testUsernameWithoutPassword--
+--Output from testPasswordsDontMatch--
+--Output from testUsernameIsAvailable--
+--Output from testUsernameIsNotAvailable--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Jupiter" id="1" name="CommentTests" package="" tests="7" time="0.844" timestamp="2008-09-09T23:04:56">
       <properties />
 
       <testcase classname="CommentTests" name="testToString" time="0.562" />
@@ -36,7 +66,7 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Jupiter" id="1" name="PluginTests" package="" tests="6" time="0.719" timestamp="2008-09-10T04:51:27">
+  <testsuite errors="0" failures="0" hostname="Jupiter" id="2" name="PluginTests" package="" tests="6" time="0.719" timestamp="2008-09-10T04:51:27">
       <properties />
 
       <testcase classname="PluginTests" name="testValidPlugin" time="0.563" />

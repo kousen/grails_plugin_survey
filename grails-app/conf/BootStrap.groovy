@@ -12,9 +12,9 @@ class BootStrap {
         }
         
         if (!JsecRole.findByName('User')) {
-					def normalRole = new JsecRole(name: 'User').save()
-					def normalUser = new JsecUser(username:'grails',
-							passwordHash: new Sha1Hash('groovy').toHex()).save()
+					def normalRole = new JsecRole(name: "User").save()
+					def normalUser = new JsecUser(username:"grails",
+							passwordHash: new Sha1Hash("groovy").toHex()).save()
 					new JsecUserRoleRel(user: normalUser, role: normalRole).save()
         }
         

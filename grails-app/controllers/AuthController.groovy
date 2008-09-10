@@ -1,6 +1,7 @@
 import org.jsecurity.authc.AuthenticationException
 import org.jsecurity.authc.UsernamePasswordToken
 import org.jsecurity.SecurityUtils
+import org.jsecurity.crypto.hash.Sha1Hash
 
 class AuthController {
     def jsecSecurityManager
@@ -9,6 +10,40 @@ class AuthController {
 
     def login = {
         return [ username: params.username, rememberMe: (params.rememberMe != null), targetUri: params.targetUri ]
+    }
+    
+    def register = {
+        if (params.username) {
+            if (JsecUser.findByUsernameIlike(params.username)) {
+                flash.message = "That id is already taken"
+            } else if (!params.username || !params.password) {
+                flash.message = "You must supply a username and password"
+            } else if (!(params.password.equals(params.confirmPassword))) {
+            	  flash.message = "Password and confirmation must match"
+            } else {
+                JsecRole userRole = JsecRole.findByName("User")
+                def newUser = new JsecUser(username: params.username, passwordHash: new Sha1Hash(params.password).toHex()).save(flush: true)
+                new JsecUserRoleRel(user: newUser, role: userRole).save(flush: true)
+
+                // and log them in...
+                def authToken = new UsernamePasswordToken(params.username, params.password)
+                jsecSecurityManager.login(authToken)
+
+                redirect(uri:"/plugin/index")
+            }
+            [ username: params.username, password: params.password ]
+        }
+
+
+    }
+
+    def isAvailable = {
+        println "Available for: ${params.username}"
+        if (JsecUser.findByUsernameIlike(params.username)) {
+            render "<span style='color: red'>No</span>"
+        } else {
+            render "<span style='color: green'>Yes</span>"
+        }
     }
 
     def signIn = {
