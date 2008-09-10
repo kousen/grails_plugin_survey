@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Jupiter" name="PluginTests" tests="6" time="0.047" timestamp="2008-09-09T23:04:57">
+<testsuite errors="0" failures="0" hostname="Jupiter" name="PluginTests" tests="6" time="0.719" timestamp="2008-09-10T04:51:27">
   <properties />
-  <testcase classname="PluginTests" name="testToString" time="0.0" />
-  <testcase classname="PluginTests" name="testValidPlugin" time="0.016" />
-  <testcase classname="PluginTests" name="testBlankName" time="0.0" />
-  <testcase classname="PluginTests" name="testBadVersion" time="0.015" />
+  <testcase classname="PluginTests" name="testValidPlugin" time="0.563" />
+  <testcase classname="PluginTests" name="testBlankName" time="0.016" />
+  <testcase classname="PluginTests" name="testBadVersion" time="0.0" />
   <testcase classname="PluginTests" name="testBadRatings" time="0.0" />
-  <testcase classname="PluginTests" name="testNegativeTotalVotes" time="0.016" />
-  <system-out><![CDATA[--Output from testToString--
---Output from testValidPlugin--
+  <testcase classname="PluginTests" name="testNegativeTotalVotes" time="0.0" />
+  <testcase classname="PluginTests" name="testToString" time="0.0" />
+  <system-out><![CDATA[--Output from testValidPlugin--
 --Output from testBlankName--
 --Output from testBadVersion--
 --Output from testBadRatings--
 --Output from testNegativeTotalVotes--
+--Output from testToString--
 ]]></system-out>
-  <system-err><![CDATA[--Output from testToString--
---Output from testValidPlugin--
+  <system-err><![CDATA[--Output from testValidPlugin--
 --Output from testBlankName--
 --Output from testBadVersion--
 --Output from testBadRatings--
 --Output from testNegativeTotalVotes--
+--Output from testToString--
 ]]></system-err>
 </testsuite>

@@ -1,6 +1,6 @@
---Output from testToString--
 --Output from testValidPlugin--
 --Output from testBlankName--
 --Output from testBadVersion--
 --Output from testBadRatings--
 --Output from testNegativeTotalVotes--
+--Output from testToString--

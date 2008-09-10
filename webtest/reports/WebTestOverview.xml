@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overview Implementation-Title="Canoo Webtest" Implementation-Version="R_1708">
-	<folder name="001_CommentBasicOper">
-<summary duration='3328' starttime='Tue Sep 09 21:16:41 EDT 2008' name='Comment basic operations: view list, create new entry, view, edit, delete, view' successful='yes'><topsteps total='4' notexecuted='0' failed='0' successful='4'></topsteps><steps total='28' notexecuted='0' failed='0' successful='28'></steps><timingprofile number='10' average='327'><range to='1' number='9' from='0'></range><range to='3' number='1' from='1'></range><range to='5' number='0' from='3'></range><range to='10' number='0' from='5'></range><range to='30' number='0' from='10'></range><range number='0' from='30'></range></timingprofile></summary>
-</folder>
-<folder name="002_PluginBasicOpera">
-<summary duration='562' starttime='Tue Sep 09 21:16:44 EDT 2008' name='Plugin basic operations: view list, create new entry, view, edit, delete, view' successful='yes'><topsteps total='19' notexecuted='0' failed='0' successful='19'></topsteps><steps total='36' notexecuted='0' failed='0' successful='36'></steps><timingprofile number='10' average='49'><range to='1' number='10' from='0'></range><range to='3' number='0' from='1'></range><range to='5' number='0' from='3'></range><range to='10' number='0' from='5'></range><range to='30' number='0' from='10'></range><range number='0' from='30'></range></timingprofile></summary>
+	<folder name="001_PluginBasicOpera">
+<summary duration='3749' starttime='Wed Sep 10 00:53:29 EDT 2008' name='Plugin basic operations: view list, create new entry, view, edit, delete, view' successful='yes'><topsteps total='19' notexecuted='0' failed='0' successful='19'></topsteps><steps total='36' notexecuted='0' failed='0' successful='36'></steps><timingprofile number='10' average='364'><range to='1' number='9' from='0'></range><range to='3' number='1' from='1'></range><range to='5' number='0' from='3'></range><range to='10' number='0' from='5'></range><range to='30' number='0' from='10'></range><range number='0' from='30'></range></timingprofile></summary>
 </folder>
 
 </overview>

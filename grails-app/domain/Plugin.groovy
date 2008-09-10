@@ -6,6 +6,8 @@ class Plugin {
     double rating
     int totalVotes
 	
+    static hasMany = [comments:Comment]
+	
     static constraints = {
         name(blank:false)
         ver(matches:/^\d+(\.\d+)+.*/)
@@ -15,8 +17,6 @@ class Plugin {
         totalVotes(min:0)
     }
 
-    static hasMany = [comments:Comment]
-	
     String toString() { "$name ($ver) $description" }
 
 }

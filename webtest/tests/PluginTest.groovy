@@ -67,6 +67,6 @@ class PluginTest extends grails.util.WebTest {
     }
 
     def showFirstElementDetails() {
-        ant.clickLink   '2', description:'go to detail view'
+        ant.clickLink   '1', description:'go to detail view'
     }
 }

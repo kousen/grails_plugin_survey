@@ -10,6 +10,14 @@ class PluginController {
         [ pluginList: Plugin.list( params ) ]
     }
 
+    def addComment = {
+        def plugin = Plugin.get( params.id )
+        plugin.addToComments(contributor: params.contributor,
+          comment: params.comment).save()
+
+        render(template:'comments', model:[comments:plugin.comments])
+    }
+
     def show = {
         def plugin = Plugin.get( params.id )
 
