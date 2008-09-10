@@ -12,8 +12,7 @@ class PluginController {
 
     def addComment = {
         def plugin = Plugin.get( params.id )
-        plugin.addToComments(contributor: params.contributor,
-          comment: params.comment).save()
+        plugin.addToComments(comment: params.comment).save()
 
         render(template:'comments', model:[comments:plugin.comments])
     }
@@ -58,7 +57,7 @@ class PluginController {
         if(plugin) {
             plugin.properties = params
             if(!plugin.hasErrors() && plugin.save()) {
-                flash.message = "Plugin ${params.id} updated"
+                flash.message = "Plugin ${plugin.name} updated"
                 redirect(action:show,id:plugin.id)
             }
             else {

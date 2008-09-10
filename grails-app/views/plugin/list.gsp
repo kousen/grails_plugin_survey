@@ -9,7 +9,12 @@
     <body>
         <div class="nav">
             <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
-            <span class="menuButton"><g:link class="create" action="create">New Plugin</g:link></span>
+            <jsec:hasRole name="Administrator">
+	            <span class="menuButton"><g:link class="create" action="create">New Plugin</g:link></span>
+	          </jsec:hasRole>
+     				<jsec:isLoggedIn>
+		  				<span class="menuButton">Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</span>
+						</jsec:isLoggedIn>
         </div>
         <div class="body">
             <h1>Plugin List</h1>
@@ -30,6 +35,7 @@
                    	        <g:sortableColumn property="rating" title="Rating" />
                         
                    	        <g:sortableColumn property="link" title="Link" />
+                   	        <th>Comments</th>
                         
                         </tr>
                     </thead>
@@ -46,6 +52,7 @@
                             <td>${fieldValue(bean:plugin, field:'rating')}</td>
                         
                             <td>${fieldValue(bean:plugin, field:'link')}</td>
+                            <td><g:link action="show" id="${plugin.id}">${plugin?.comments ? plugin.comments.size() : 0}</g:link></td>
                         
                         </tr>
                     </g:each>

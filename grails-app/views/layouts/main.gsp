@@ -10,10 +10,7 @@
         <div id="spinner" class="spinner" style="display:none;">
             <img src="${createLinkTo(dir:'images',file:'spinner.gif')}" alt="Spinner" />
         </div>	
-        <div class="logo"><img src="${createLinkTo(dir:'images',file:'grails_logo.jpg')}" alt="Grails" /></div>	
-				<jsec:isLoggedIn>
-  				<div>Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</div>
-				</jsec:isLoggedIn>
+        <div class="logo"><img src="${createLinkTo(dir:'images',file:'grails_plugins_logo.png')}" alt="Grails Plugins" /></div>	
 				<g:layoutBody />		
     </body>	
 </html>

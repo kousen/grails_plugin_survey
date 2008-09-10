@@ -11,7 +11,12 @@
     <div class="nav">
       <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
       <span class="menuButton"><g:link class="list" action="list">Plugin List</g:link></span>
-      <span class="menuButton"><g:link class="create" action="create">New Plugin</g:link></span>
+   		<jsec:hasRole name="Administrator">
+      	<span class="menuButton"><g:link class="create" action="create">New Plugin</g:link></span>
+      </jsec:hasRole>
+			<jsec:isLoggedIn>
+ 				<span class="menuButton">Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</span>
+			</jsec:isLoggedIn>
     </div>
     <div class="body">
       <h1>Show Plugin</h1>
@@ -84,7 +89,7 @@
           </tbody>
         </table>
       </div>
-      <h2>Add Comment</h2>
+      <h1>Add Comment</h1>
       <g:formRemote url="[action:'addComment']" name="addComment" update="comments">
         <g:hiddenField name="id" value="${plugin.id}" />
 				Comment: <g:textField name="comment" value="" />
