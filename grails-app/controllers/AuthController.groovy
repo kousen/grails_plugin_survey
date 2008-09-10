@@ -5,6 +5,7 @@ import org.jsecurity.crypto.hash.Sha1Hash
 
 class AuthController {
     def jsecSecurityManager
+    def jcaptchaService
 
     def index = { redirect(action: 'login', params: params) }
 
@@ -21,6 +22,7 @@ class AuthController {
             } else if (!(params.password.equals(params.confirmPassword))) {
             	  flash.message = "Password and confirmation must match"
             } else {
+            	if (jcaptchaService.validateResponse("imageCaptcha", session.id, params.captcha)) {
                 JsecRole userRole = JsecRole.findByName("User")
                 def newUser = new JsecUser(username: params.username, passwordHash: new Sha1Hash(params.password).toHex()).save(flush: true)
                 new JsecUserRoleRel(user: newUser, role: userRole).save(flush: true)
@@ -30,6 +32,9 @@ class AuthController {
                 jsecSecurityManager.login(authToken)
 
                 redirect(uri:"/plugin/index")
+              } else {
+              	flash.message = "Dude, I think you are a bot"
+              }
             }
             [ username: params.username, password: params.password ]
         }
