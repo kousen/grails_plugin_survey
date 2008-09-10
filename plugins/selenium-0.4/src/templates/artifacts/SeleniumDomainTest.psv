@@ -1,0 +1,32 @@
+open|XcontextPathX/XpropertyNameX
+verifyTextPresent|Home
+
+verifyTextPresent|XclassNameX List
+verifyXpathCount|xpath=(//div[@class='list']//tbody/tr)|0
+
+clickAndWait|link=New XclassNameX
+verifyTextPresent|Create XclassNameX
+clickAndWait|//input[@value='Create']
+verifyTextPresent|Show XclassNameX
+clickAndWait|link=XclassNameX List
+
+verifyTextPresent|XclassNameX List
+verifyXpathCount|xpath=(//div[@class='list']//tbody/tr)|1
+
+clickAndWait|link=1
+clickAndWait|//input[@value='Edit']
+
+verifyTextPresent|Edit XclassNameX
+clickAndWait|//input[@value='Update']
+verifyTextPresent|Show XclassNameX
+clickAndWait|link=XclassNameX List
+
+verifyTextPresent|XclassNameX List
+verifyXpathCount|xpath=(//div[@class='list']//tbody/tr)|1
+
+clickAndWait|link=1
+clickAndWait|//input[@value='Delete']
+verifyConfirmation|Are you sure?
+
+verifyTextPresent|XclassNameX List
+verifyXpathCount|xpath=(//div[@class='list']//tbody/tr)|0

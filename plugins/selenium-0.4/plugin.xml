@@ -1,0 +1,7 @@
+<plugin name='selenium' version='0.4'>
+  <resources>
+    <resource>SeleniumTagLib</resource>
+    <resource>spring.resources</resource>
+    <resource>SeleniumController</resource>
+  </resources>
+</plugin>
