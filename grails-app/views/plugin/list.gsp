@@ -21,8 +21,6 @@
                     <thead>
                         <tr>
                         
-                   	        <g:sortableColumn property="id" title="Id" />
-                        
                    	        <g:sortableColumn property="name" title="Name" />
                         
                    	        <g:sortableColumn property="ver" title="Ver" />
@@ -39,9 +37,7 @@
                     <g:each in="${pluginList}" status="i" var="plugin">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${plugin.id}">${fieldValue(bean:plugin, field:'id')}</g:link></td>
-                        
-                            <td>${fieldValue(bean:plugin, field:'name')}</td>
+                            <td><g:link action="show" id="${plugin.id}">${fieldValue(bean:plugin, field:'name')}</g:link></td>
                         
                             <td>${fieldValue(bean:plugin, field:'ver')}</td>
                         

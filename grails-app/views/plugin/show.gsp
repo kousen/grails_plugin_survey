@@ -87,7 +87,6 @@
       <h2>Add Comment</h2>
       <g:formRemote url="[action:'addComment']" name="addComment" update="comments">
         <g:hiddenField name="id" value="${plugin.id}" />
-				<g:hiddenField name="contributor" value="anonymous" />
 				Comment: <g:textField name="comment" value="" />
       </g:formRemote>
       <div class="buttons">

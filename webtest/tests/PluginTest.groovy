@@ -54,7 +54,7 @@ class PluginTest extends grails.util.WebTest {
             verifyListSize 0
         }
     }
-
+    
     String ROW_COUNT_XPATH = "count(//div[@class='list']//tbody/tr)"
 
     def verifyListSize(int size) {
@@ -67,6 +67,6 @@ class PluginTest extends grails.util.WebTest {
     }
 
     def showFirstElementDetails() {
-        ant.clickLink   '1', description:'go to detail view'
+        ant.clickLink   'test_plugin', description:'go to detail view'
     }
 }
