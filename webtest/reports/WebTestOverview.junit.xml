@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite time="2.954" tests="1" name="WebTest" failures="0" errors="0">
+<testsuite time="3.89" tests="2" name="WebTest" failures="0" errors="0">
 <!--
 			This is an overview of the WebTest results in JUnit "standard" format.
 			It doesn't present all the information available in WebTest reports but can be easily be integrated
 			in reports of continuous integration tools like Cruise Control.
 			-->
-<testcase time="2.954" name="Plugin basic operations: view list, create new entry, view, edit, delete, view" classname="WebTest"/>
+<testcase time="3.328" name="Comment basic operations: view list, create new entry, view, edit, delete, view" classname="WebTest"/>
+<testcase time="0.562" name="Plugin basic operations: view list, create new entry, view, edit, delete, view" classname="WebTest"/>
 </testsuite>

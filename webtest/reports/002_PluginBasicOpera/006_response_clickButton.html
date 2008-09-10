@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Edit Plugin</title>
+        <link rel="stylesheet" href="/survey/css/main.css" />
+        <link rel="shortcut icon" href="/survey/images/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="layout" content="main" />
+        <script type="text/javascript" src="/survey/js/application.js"></script>
+				
+    </head>
+    <body>
+        <div id="spinner" class="spinner" style="display:none;">
+            <img src="/survey/images/spinner.gif" alt="Spinner" />
+        </div>	
+        <div class="logo"><img src="/survey/images/grails_logo.jpg" alt="Grails" /></div>	
+        <div class="nav">
+            <span class="menuButton"><a class="home" href="/survey">Home</a></span>
+            <span class="menuButton"><a href="/survey/plugin/list" class="list">Plugin List</a></span>
+            <span class="menuButton"><a href="/survey/plugin/create" class="create">New Plugin</a></span>
+        </div>
+        <div class="body">
+            <h1>Edit Plugin</h1>
+            
+            <form action="/survey/plugin/index" method="post" >
+                <input type="hidden" name="id" value="2" />
+                <div class="dialog">
+                    <table>
+                        <tbody>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="name">Name:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="name" name="name" value="test_plugin"/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="ver">Ver:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="ver" name="ver" value="0.1"/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="description">Description:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="description" name="description" value="test plugin"/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="rating">Rating:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="rating" name="rating" value="1.0" />
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="link">Link:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="link" name="link" value="http://grails.org/Plugins/Test+Plugin"/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="totalVotes">Total Votes:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="totalVotes" name="totalVotes" value="2" />
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="comments">Comments:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    
+<ul>
+</ul><a href="/survey/comment/create?plugin.id=2">Add Comment</a>
+
+                                </td>
+                            </tr> 
+                        
+                        </tbody>
+                    </table>
+                </div>
+                <div class="buttons">
+                    <span class="button"><input type="submit" name="_action_Update" value="Update" class="save" /></span>
+                    <span class="button"><input type="submit" name="_action_Delete" value="Delete" class="delete" onclick="return confirm('Are you sure?');" /></span>
+                </div>
+            </form>
+        </div>		
+    </body>	
+</html>

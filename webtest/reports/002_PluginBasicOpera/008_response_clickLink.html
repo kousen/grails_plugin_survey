@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Plugin List</title>
+        <link rel="stylesheet" href="/survey/css/main.css" />
+        <link rel="shortcut icon" href="/survey/images/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="layout" content="main" />
+        <script type="text/javascript" src="/survey/js/application.js"></script>
+				
+    </head>
+    <body>
+        <div id="spinner" class="spinner" style="display:none;">
+            <img src="/survey/images/spinner.gif" alt="Spinner" />
+        </div>	
+        <div class="logo"><img src="/survey/images/grails_logo.jpg" alt="Grails" /></div>	
+        <div class="nav">
+            <span class="menuButton"><a class="home" href="/survey">Home</a></span>
+            <span class="menuButton"><a href="/survey/plugin/create" class="create">New Plugin</a></span>
+        </div>
+        <div class="body">
+            <h1>Plugin List</h1>
+            
+            <div class="list">
+                <table>
+                    <thead>
+                        <tr>
+                        
+                   	        <th class="sortable" ><a href="/survey/plugin/list?sort=id&amp;order=asc">Id</a></th>
+                        
+                   	        <th class="sortable" ><a href="/survey/plugin/list?sort=name&amp;order=asc">Name</a></th>
+                        
+                   	        <th class="sortable" ><a href="/survey/plugin/list?sort=ver&amp;order=asc">Ver</a></th>
+                        
+                   	        <th class="sortable" ><a href="/survey/plugin/list?sort=description&amp;order=asc">Description</a></th>
+                        
+                   	        <th class="sortable" ><a href="/survey/plugin/list?sort=rating&amp;order=asc">Rating</a></th>
+                        
+                   	        <th class="sortable" ><a href="/survey/plugin/list?sort=link&amp;order=asc">Link</a></th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                        <tr class="odd">
+                        
+                            <td><a href="/survey/plugin/show/2">2</a></td>
+                        
+                            <td>test_plugin</td>
+                        
+                            <td>0.1</td>
+                        
+                            <td>test plugin</td>
+                        
+                            <td>1.0</td>
+                        
+                            <td>http://grails.org/Plugins/Test+Plugin</td>
+                        
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+            <div class="paginateButtons">
+                
+            </div>
+        </div>		
+    </body>	
+</html>

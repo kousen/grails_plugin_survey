@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Create Plugin</title>
+        <link rel="stylesheet" href="/survey/css/main.css" />
+        <link rel="shortcut icon" href="/survey/images/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="layout" content="main" />
+        <script type="text/javascript" src="/survey/js/application.js"></script>
+				
+    </head>
+    <body>
+        <div id="spinner" class="spinner" style="display:none;">
+            <img src="/survey/images/spinner.gif" alt="Spinner" />
+        </div>	
+        <div class="logo"><img src="/survey/images/grails_logo.jpg" alt="Grails" /></div>	
+        <div class="nav">
+            <span class="menuButton"><a class="home" href="/survey">Home</a></span>
+            <span class="menuButton"><a href="/survey/plugin/list" class="list">Plugin List</a></span>
+        </div>
+        <div class="body">
+            <h1>Create Plugin</h1>
+            
+            <form action="/survey/plugin/save" method="post" >
+                <div class="dialog">
+                    <table>
+                        <tbody>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="name">Name:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="name" name="name" value=""/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="ver">Ver:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="ver" name="ver" value=""/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="description">Description:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="description" name="description" value=""/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="rating">Rating:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="rating" name="rating" value="0.0" />
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="link">Link:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="link" name="link" value=""/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="totalVotes">Total Votes:</label>
+                                </td>
+                                <td valign="top" class="value ">
+                                    <input type="text" id="totalVotes" name="totalVotes" value="0" />
+                                </td>
+                            </tr> 
+                        
+                        </tbody>
+                    </table>
+                </div>
+                <div class="buttons">
+                    <span class="button"><input class="save" type="submit" value="Create" /></span>
+                </div>
+            </form>
+        </div>		
+    </body>	
+</html>

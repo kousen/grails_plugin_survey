@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <summary Implementation-Title="Canoo Webtest" Implementation-Version="R_1708">
-    <testresult endtime="Tue Sep 09 20:32:19 EDT 2008" location=": "
-        starttime="Tue Sep 09 20:32:16 EDT 2008" successful="yes" testspecname="Plugin basic operations: view list, create new entry, view, edit, delete, view">
+    <testresult endtime="Tue Sep 09 21:16:45 EDT 2008" location=": "
+        starttime="Tue Sep 09 21:16:44 EDT 2008" successful="yes" testspecname="Plugin basic operations: view list, create new entry, view, edit, delete, view">
         <config>
             <parameter name="port" value="8080"/>
             <parameter name="summary" value="yes"/>
@@ -21,7 +21,7 @@
             <parameter name="timeout" value="300"/>
         </config>
         <results>
-            <step duration="1860" result="completed" taskName="invoke">
+            <step duration="62" result="completed" taskName="invoke">
                 <parameter name="-> complete url" value="http://localhost:8080/survey/plugin"/>
                 <parameter name="nested text" value="plugin"/>
                 <resultFile name="001_response_invoke.html"/>
@@ -34,20 +34,20 @@
                     <error col="82" line="15" url="http://localhost:8080/survey/plugin/list">Missing attribute name.</error>
                 </htmlparser>
             </step>
-            <step duration="15" result="completed" taskName="verifyText">
+            <step duration="0" result="completed" taskName="verifyText">
                 <parameter name="nested text" value="Home"/>
             </step>
-            <step description="verify Plugin list view with 0 row(s)" duration="16"
+            <step description="verify Plugin list view with 0 row(s)" duration="0"
                 result="completed" taskName="group">
                 <step duration="0" result="completed" taskName="verifyText">
                     <parameter name="nested text" value="Plugin List"/>
                 </step>
-                <step description="0 row(s) of data expected" duration="16" result="completed" taskName="verifyXPath">
+                <step description="0 row(s) of data expected" duration="0" result="completed" taskName="verifyXPath">
                     <parameter name="text" value="0"/>
                     <parameter name="xpath" value="count(//div[@class='list']//tbody/tr)"/>
                 </step>
             </step>
-            <step duration="188" result="completed" taskName="clickLink">
+            <step duration="47" result="completed" taskName="clickLink">
                 <parameter name="nested text" value="New Plugin"/>
                 <resultFile name="002_response_clickLink.html"/>
                 <htmlparser>
@@ -66,10 +66,10 @@
                     <error col="91" line="86" url="http://localhost:8080/survey/plugin/create">Missing attribute name.</error>
                 </htmlparser>
             </step>
-            <step duration="15" result="completed" taskName="verifyText">
+            <step duration="0" result="completed" taskName="verifyText">
                 <parameter name="nested text" value="Create Plugin"/>
             </step>
-            <step duration="31" result="completed" taskName="setInputField">
+            <step duration="0" result="completed" taskName="setInputField">
                 <parameter name="name" value="name"/>
                 <parameter name="value" value="test_plugin"/>
             </step>
@@ -77,7 +77,7 @@
                 <parameter name="name" value="ver"/>
                 <parameter name="value" value="0.1"/>
             </step>
-            <step duration="0" result="completed" taskName="setInputField">
+            <step duration="16" result="completed" taskName="setInputField">
                 <parameter name="name" value="description"/>
                 <parameter name="value" value="test plugin"/>
             </step>
@@ -89,29 +89,29 @@
                 <parameter name="name" value="link"/>
                 <parameter name="value" value="http://grails.org/Plugins/Test+Plugin"/>
             </step>
-            <step duration="0" result="completed" taskName="setInputField">
+            <step duration="15" result="completed" taskName="setInputField">
                 <parameter name="name" value="totalVotes"/>
                 <parameter name="value" value="2"/>
             </step>
-            <step duration="297" result="completed" taskName="clickButton">
+            <step duration="63" result="completed" taskName="clickButton">
                 <parameter name="nested text" value="Create"/>
                 <resultFile name="003_response_clickButton.html"/>
                 <htmlparser>
-                    <error col="60" line="4" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
-                    <error col="89" line="5" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
-                    <error col="75" line="6" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
-                    <error col="44" line="7" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
-                    <error col="65" line="13" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
-                    <error col="82" line="15" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
-                    <error col="62" line="96" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
-                    <error col="109" line="97" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
-                    <error col="158" line="98" url="http://localhost:8080/survey/plugin/show/1;jsessionid=1gfnriqb6rve">Missing attribute name.</error>
+                    <error col="60" line="4" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
+                    <error col="89" line="5" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
+                    <error col="75" line="6" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
+                    <error col="44" line="7" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
+                    <error col="65" line="13" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
+                    <error col="82" line="15" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
+                    <error col="62" line="96" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
+                    <error col="109" line="97" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
+                    <error col="158" line="98" url="http://localhost:8080/survey/plugin/show/2;jsessionid=3mrxoylbeqii">Missing attribute name.</error>
                 </htmlparser>
             </step>
             <step description="Detail page" duration="0" result="completed" taskName="verifyText">
                 <parameter name="nested text" value="Show Plugin"/>
             </step>
-            <step description="Back to list view" duration="63" result="completed" taskName="clickLink">
+            <step description="Back to list view" duration="47" result="completed" taskName="clickLink">
                 <parameter name="nested text" value="List"/>
                 <resultFile name="004_response_clickLink.html"/>
                 <htmlparser>
@@ -123,33 +123,33 @@
                     <error col="82" line="15" url="http://localhost:8080/survey/plugin/list">Missing attribute name.</error>
                 </htmlparser>
             </step>
-            <step description="verify Plugin list view with 1 row(s)" duration="0"
+            <step description="verify Plugin list view with 1 row(s)" duration="15"
                 result="completed" taskName="group">
                 <step duration="0" result="completed" taskName="verifyText">
                     <parameter name="nested text" value="Plugin List"/>
                 </step>
-                <step description="1 row(s) of data expected" duration="0" result="completed" taskName="verifyXPath">
+                <step description="1 row(s) of data expected" duration="15" result="completed" taskName="verifyXPath">
                     <parameter name="text" value="1"/>
                     <parameter name="xpath" value="count(//div[@class='list']//tbody/tr)"/>
                 </step>
             </step>
-            <step description="edit the one element" duration="344" result="completed" taskName="group">
-                <step description="go to detail view" duration="47" result="completed" taskName="clickLink">
-                    <parameter name="nested text" value="1"/>
+            <step description="edit the one element" duration="188" result="completed" taskName="group">
+                <step description="go to detail view" duration="32" result="completed" taskName="clickLink">
+                    <parameter name="nested text" value="2"/>
                     <resultFile name="005_response_clickLink.html"/>
                     <htmlparser>
-                        <error col="60" line="4" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="89" line="5" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="75" line="6" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="44" line="7" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="65" line="13" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="82" line="15" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="62" line="94" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="109" line="95" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="158" line="96" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
+                        <error col="60" line="4" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="89" line="5" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="75" line="6" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="44" line="7" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="65" line="13" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="82" line="15" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="62" line="94" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="109" line="95" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="158" line="96" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
                     </htmlparser>
                 </step>
-                <step duration="187" result="completed" taskName="clickButton">
+                <step duration="62" result="completed" taskName="clickButton">
                     <parameter name="nested text" value="Edit"/>
                     <resultFile name="006_response_clickButton.html"/>
                     <htmlparser>
@@ -173,25 +173,25 @@
                 <step duration="0" result="completed" taskName="verifyText">
                     <parameter name="nested text" value="Edit Plugin"/>
                 </step>
-                <step duration="63" result="completed" taskName="clickButton">
+                <step duration="47" result="completed" taskName="clickButton">
                     <parameter name="nested text" value="Update"/>
                     <resultFile name="007_response_clickButton.html"/>
                     <htmlparser>
-                        <error col="60" line="4" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="89" line="5" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="75" line="6" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="44" line="7" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="65" line="13" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="82" line="15" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="62" line="96" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="109" line="97" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="158" line="98" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
+                        <error col="60" line="4" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="89" line="5" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="75" line="6" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="44" line="7" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="65" line="13" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="82" line="15" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="62" line="96" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="109" line="97" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="158" line="98" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
                     </htmlparser>
                 </step>
                 <step duration="0" result="completed" taskName="verifyText">
                     <parameter name="nested text" value="Show Plugin"/>
                 </step>
-                <step description="Back to list view" duration="47" result="completed" taskName="clickLink">
+                <step description="Back to list view" duration="31" result="completed" taskName="clickLink">
                     <parameter name="nested text" value="List"/>
                     <resultFile name="008_response_clickLink.html"/>
                     <htmlparser>
@@ -214,23 +214,23 @@
                     <parameter name="xpath" value="count(//div[@class='list']//tbody/tr)"/>
                 </step>
             </step>
-            <step description="delete the only element" duration="125" result="completed" taskName="group">
-                <step description="go to detail view" duration="46" result="completed" taskName="clickLink">
-                    <parameter name="nested text" value="1"/>
+            <step description="delete the only element" duration="94" result="completed" taskName="group">
+                <step description="go to detail view" duration="47" result="completed" taskName="clickLink">
+                    <parameter name="nested text" value="2"/>
                     <resultFile name="009_response_clickLink.html"/>
                     <htmlparser>
-                        <error col="60" line="4" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="89" line="5" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="75" line="6" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="44" line="7" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="65" line="13" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="82" line="15" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="62" line="94" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="109" line="95" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
-                        <error col="158" line="96" url="http://localhost:8080/survey/plugin/show/1">Missing attribute name.</error>
+                        <error col="60" line="4" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="89" line="5" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="75" line="6" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="44" line="7" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="65" line="13" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="82" line="15" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="62" line="94" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="109" line="95" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
+                        <error col="158" line="96" url="http://localhost:8080/survey/plugin/show/2">Missing attribute name.</error>
                     </htmlparser>
                 </step>
-                <step duration="63" result="completed" taskName="clickButton">
+                <step duration="47" result="completed" taskName="clickButton">
                     <parameter name="nested text" value="Delete"/>
                     <resultFile name="010_response_clickButton.html"/>
                     <htmlparser>
@@ -242,15 +242,15 @@
                         <error col="82" line="15" url="http://localhost:8080/survey/plugin/list">Missing attribute name.</error>
                     </htmlparser>
                 </step>
-                <step duration="16" result="completed" taskName="verifyXPath">
+                <step duration="0" result="completed" taskName="verifyXPath">
                     <parameter name="regex" value="true"/>
                     <parameter name="text" value=".*Plugin.*deleted.*"/>
                     <parameter name="xpath" value="//div[@class='message']"/>
                 </step>
             </step>
-            <step description="verify Plugin list view with 0 row(s)" duration="0"
+            <step description="verify Plugin list view with 0 row(s)" duration="15"
                 result="completed" taskName="group">
-                <step duration="0" result="completed" taskName="verifyText">
+                <step duration="15" result="completed" taskName="verifyText">
                     <parameter name="nested text" value="Plugin List"/>
                 </step>
                 <step description="0 row(s) of data expected" duration="0" result="completed" taskName="verifyXPath">
