@@ -1,7 +1,8 @@
 import org.jsecurity.SecurityUtils
 
 class PluginController {
-    
+		def retrieverService
+		    
     def index = { redirect(action:list,params:params) }
 
     // the delete, save and update actions only accept POST requests
@@ -18,6 +19,11 @@ class PluginController {
         plugin.addToComments(comment: comment).save()
 
         render(template:'comments', model:[comments:plugin.comments])
+    }
+
+    def remoteList = {
+        retrieverService.updateSavedList()
+        redirect( action:list )
     }
 
     def show = {
