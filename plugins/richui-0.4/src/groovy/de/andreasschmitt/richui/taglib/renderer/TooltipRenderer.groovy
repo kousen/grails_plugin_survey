@@ -15,7 +15,7 @@ class TooltipRenderer extends AbstractRenderer {
 	
 	protected void renderTagContent(Map attrs, GroovyPageTagBody body, MarkupBuilder builder) throws RenderException {			
 		builder.script(type: "text/javascript"){
-			builder.yieldUnescaped " var myTooltip = new YAHOO.widget.Tooltip(\"myTooltip\", { context:\"$attrs.id\" } );"
+			builder.yieldUnescaped " var myTooltip = new YAHOO.widget.Tooltip(\"myTooltip\", { context:\"$attrs.id\"} );"
 		}
 	}
 	
