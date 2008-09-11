@@ -6,6 +6,16 @@
   <title>Register</title>
 </head>
 <body>
+  <div class="nav">
+    <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
+    <jsec:isLoggedIn>
+	    <span class="menuButton">Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</span>
+    </jsec:isLoggedIn>
+		<jsec:isNotLoggedIn>
+		  <span class="menuButton">Please <g:link controller="auth" action="login">Login</g:link> 
+				or <g:link controller="auth" action="register">Register</g:link></span>
+		</jsec:isNotLoggedIn>
+  </div>
 	<div class="body">
   <g:if test="${flash.message}">
     <div class="message">${flash.message}</div>
@@ -18,7 +28,7 @@
         <tr class="prop">
           <td valign="top" class="name"><label for="username">Username:</label></td>
           <td valign="top" class="value"><g:textField name="username" value="${username}" /></td>
-          <td><g:submitToRemote url="[action: 'isAvailable']" update="available" value="Available?"/> <span id="available"></span></td>
+          <td><g:submitToRemote url="[action: 'isAvailable']" update="answer" value="Available?"/> <span id="answer"></span></td>
         </tr>
         <tr class="prop">
           <td valign="top" class="name"><label for="password">Password:</label></td>
@@ -39,7 +49,7 @@
     </table>
     </div>
     <div class="buttons">
-    	<span class="button"><g:actionSubmit class="save" value="Register" /></span>
+    	<span class="button"><g:submitButton name="register" class="save" value="Register" /></span>
     </div>
   </g:form>
   </div>

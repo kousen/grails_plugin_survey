@@ -6,6 +6,7 @@ import org.jsecurity.crypto.hash.Sha1Hash
 class AuthController {
     def jsecSecurityManager
     def jcaptchaService
+    def mailService
 
     def index = { redirect(action: 'login', params: params) }
 
@@ -30,6 +31,13 @@ class AuthController {
                 // and log them in...
                 def authToken = new UsernamePasswordToken(params.username, params.password)
                 jsecSecurityManager.login(authToken)
+                
+                mailService.sendMail {
+                		to "ken.kousen+survey@kousenit.com"
+                		from "ken.kousen@kousenit.com"
+                		subject "New registration for plugin survey"
+                		body "New user: ${params.username}"
+                }
 
                 redirect(uri:"/plugin/index")
               } else {
