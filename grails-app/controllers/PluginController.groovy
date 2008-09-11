@@ -1,3 +1,5 @@
+import org.jsecurity.SecurityUtils
+
 class PluginController {
     
     def index = { redirect(action:list,params:params) }
@@ -12,7 +14,8 @@ class PluginController {
 
     def addComment = {
         def plugin = Plugin.get( params.id )
-        plugin.addToComments(comment: params.comment).save()
+        def comment = "${params.comment} (by ${SecurityUtils.subject.principal})"
+        plugin.addToComments(comment: comment).save()
 
         render(template:'comments', model:[comments:plugin.comments])
     }
