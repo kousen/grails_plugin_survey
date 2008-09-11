@@ -6,6 +6,8 @@ class Plugin {
     double rating
     int totalVotes
 	
+		static searchable = true
+		
     static hasMany = [comments:Comment]
 	
     static constraints = {
