@@ -1,5 +1,4 @@
-
-
+<resource:rating />
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -25,7 +24,6 @@
                         
                    	        <g:sortableColumn property="rating" title="Rating" />
                         
-                   	        <g:sortableColumn property="link" title="Plugin Page" />
                    	        <th>Comments</th>
                         
                         </tr>
@@ -34,15 +32,17 @@
                     <g:each in="${pluginList}" status="i" var="plugin">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${plugin.id}">${fieldValue(bean:plugin, field:'name')}</g:link></td>
+                            <td>
+                            	<g:link action="show" id="${plugin.id}">${fieldValue(bean:plugin, field:'name')}</g:link><br />
+                              <g:if test="${plugin.link}">(<a href="${plugin.link}">Plugin Page</a>)</g:if>
+                            </td>
                         
                             <td>${fieldValue(bean:plugin, field:'ver')}</td>
                         
                             <td>${fieldValue(bean:plugin, field:'description')}</td>
                         
-                            <td>${fieldValue(bean:plugin, field:'rating')}</td>
+                            <td><g:render template="rate" model='[plugin: plugin, rating: "${plugin.rating}"]' /></td>
                         
-                            <td><a href="${plugin.link}">${fieldValue(bean:plugin, field:'link')}</a></td>
                             <td><g:link action="show" id="${plugin.id}">${plugin?.comments ? plugin.comments.size() : 0}</g:link></td>
                         
                         </tr>

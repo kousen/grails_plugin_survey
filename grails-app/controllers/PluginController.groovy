@@ -3,6 +3,17 @@ import org.jsecurity.SecurityUtils
 class PluginController {
 		def retrieverService
 		    
+    def beforeInterceptor = {
+        if (!session || !session.voted) {
+            def voted = [:]
+            def names = Plugin.list().collect { it.name }
+            names.each { name ->
+                voted[name] = false
+            }
+            session.voted = voted
+        }
+    }
+    
     def index = { redirect(action:list,params:params) }
 
     // the delete, save and update actions only accept POST requests

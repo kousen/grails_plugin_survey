@@ -1,4 +1,4 @@
-
+<resource:rating />
 
 <html>
   <head>
@@ -49,7 +49,7 @@
             <tr class="prop">
               <td valign="top" class="name">Rating:</td>
 
-              <td valign="top" class="value">${fieldValue(bean:plugin, field:'rating')}</td>
+              <td valign="top" class="value"><g:render template="rate" model='[plugin: plugin, rating: "${plugin.rating}"]' /></td>
 
             </tr>
 

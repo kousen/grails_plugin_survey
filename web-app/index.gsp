@@ -9,6 +9,8 @@
         Grails plugins and let you rate them and add your own (brief) comments.</p>
         <p style="margin-left:20px;width:80%">You can browse the list, but in order to rate them or comment, 
         you must register.</p>
+        <p style="margin-left:20px;width:80%">You may vote multiple times, but only once per session.</p>
+        <p>&nbsp;</p>
         <div class="dialog" style="margin-left:20px;width:60%;">
             <ul>
               <li class="controller"><g:link controller="plugin">Go to the list of Plugins</g:link></li>

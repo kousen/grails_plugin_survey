@@ -16,7 +16,7 @@
             <span class="menuButton"><g:link controller="plugin" class="list" action="list">List Plugins</g:link></span>
             <jsec:hasRole name="Administrator">
 	            <span class="menuButton"><g:link controller="plugin" class="create" action="create">New Plugin</g:link></span>
-				      <span class="menuButton"><g:link controller="plugin" class="create" action="remoteList">Update List</g:link></span>
+				      <span class="menuButton"><g:link controller="plugin" class="create" action="remoteList">Remote Update</g:link></span>
 	          </jsec:hasRole>
 			      <span class="menuButton"><g:link class="list" controller="searchable">Search Plugins</g:link></span>
      				<jsec:isLoggedIn>

@@ -18,10 +18,10 @@ class BootStrap {
 					new JsecUserRoleRel(user: normalUser, role: normalRole).save()
         }
         
-        if (!Plugin.findByName('test')) {
-        	new Plugin(name:'test',ver:'0.1',description:'test plugin',
-        			rating:3,totalVotes:2).save()
-        }
+//        if (!Plugin.findByName('test')) {
+//        	new Plugin(name:'test',ver:'0.1',description:'test plugin',
+//        			rating:3,totalVotes:2).save()
+//        }
      }
      
      def destroy = {
