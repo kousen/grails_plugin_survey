@@ -1,8 +1,8 @@
 dataSource {
-	pooled = true
-	driverClassName = "org.hsqldb.jdbcDriver"
-	username = "sa"
-	password = ""
+    pooled = true
+    driverClassName = "com.mysql.jdbc.Driver"
+    username = "grails"
+    password = "groovy"
 }
 hibernate {
     cache.use_second_level_cache=true
@@ -11,22 +11,22 @@ hibernate {
 }
 // environment specific settings
 environments {
-	development {
-		dataSource {
-			dbCreate = "create-drop" // one of 'create', 'create-drop','update'
-			url = "jdbc:hsqldb:mem:devDB"
-		}
-	}
-	test {
-		dataSource {
-			dbCreate = "update"
-			url = "jdbc:hsqldb:mem:testDb"
-		}
-	}
-	production {
-		dataSource {
-			dbCreate = "update"
-			url = "jdbc:hsqldb:file:prodDb;shutdown=true"
-		}
-	}
+    development {
+        dataSource {
+            dbCreate = "update" // one of 'create', 'create-drop','update'
+            url = "jdbc:mysql:///survey_dev"
+        }
+    }
+    test {
+        dataSource {
+            dbCreate = "update"
+            url = "jdbc:mysql:///survey_test"
+        }
+    }
+    production {
+        dataSource {
+            dbCreate = "update"
+            url = "jdbc:mysql:///survey_prod"
+        }
+    }
 }
