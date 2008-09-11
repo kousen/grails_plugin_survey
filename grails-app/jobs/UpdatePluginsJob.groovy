@@ -1,4 +1,4 @@
-class @artifact.name @{
+class UpdatePluginsJob {
     def cronExpression = "0 0 5 * * ?"
     def retrieverService
 

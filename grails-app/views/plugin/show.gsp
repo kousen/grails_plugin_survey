@@ -8,16 +8,6 @@
     <title>Show Plugin</title>
   </head>
   <body>
-    <div class="nav">
-      <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
-      <span class="menuButton"><g:link class="list" action="list">Plugin List</g:link></span>
-   		<jsec:hasRole name="Administrator">
-      	<span class="menuButton"><g:link class="create" action="create">New Plugin</g:link></span>
-      </jsec:hasRole>
-			<jsec:isLoggedIn>
- 				<span class="menuButton">Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</span>
-			</jsec:isLoggedIn>
-    </div>
     <div class="body">
       <h1>Show Plugin</h1>
       <g:if test="${flash.message}">

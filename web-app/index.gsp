@@ -4,17 +4,7 @@
 		<meta name="layout" content="main" />
     </head>
     <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
-     				<jsec:isLoggedIn>
-		  				<span class="menuButton">Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</span>
-						</jsec:isLoggedIn>
-						<jsec:isNotLoggedIn>
-							<span class="menuButton">Please <g:link controller="auth" action="login">Login</g:link> 
-								or <g:link controller="auth" action="register">Register</g:link></span>
-						</jsec:isNotLoggedIn>
-        </div>
-         <h1 style="margin-left:20px;">Welcome to the Grails Plugin Survey</h1>
+        <h1 style="margin-left:20px;">Welcome to the Grails Plugin Survey</h1>
         <p style="margin-left:20px;width:80%">Here we list the available
         Grails plugins and let you rate them and add your own (brief) comments.</p>
         <p style="margin-left:20px;width:80%">You can browse the list, but in order to rate them or comment, 

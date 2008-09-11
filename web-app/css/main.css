@@ -3,6 +3,33 @@ html * {
     /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
 }
 
+#footer {
+		clear:both;
+		text-align: center;
+		padding: 3px;
+		border-top: 1px solid #333;
+}
+
+#page {
+		width: 794px;
+		margin: 0px auto;
+		padding: 4px 0;
+		text-align: left;
+}
+
+#content {
+		float: left;
+		width: 640px;
+		color: #000;
+}
+
+#sidebar {
+		float: right;
+		width: 140px;
+		color: #000;
+		padding: 3px;
+}
+
 /* GENERAL */
 
 .spinner {

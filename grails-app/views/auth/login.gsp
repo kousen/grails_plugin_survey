@@ -5,20 +5,11 @@
   <title>Login</title>
 </head>
 <body>
-  <div class="nav">
-    <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
-    <jsec:isLoggedIn>
-	    <span class="menuButton">Logged in as: <jsec:principal/> (<g:link controller="auth" action="signOut">sign out</g:link>)</span>
-    </jsec:isLoggedIn>
-		<jsec:isNotLoggedIn>
-		  <span class="menuButton">Please <g:link controller="auth" action="login">Login</g:link> 
-				or <g:link controller="auth" action="register">Register</g:link></span>
-		</jsec:isNotLoggedIn>
-  </div>
 	<div class="body">
   <g:if test="${flash.message}">
     <div class="message">${flash.message}</div>
   </g:if>
+  <h1>Please log in below</h1>
   <g:form action="signIn">
     <input type="hidden" name="targetUri" value="${targetUri}" />
   	<div class="dialog">

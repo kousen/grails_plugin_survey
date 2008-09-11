@@ -1,8 +1,0 @@
---Output from testUsernameAlreadyExists--
---Output from testUsernameWithoutPassword--
---Output from testPasswordsDontMatch--
---Output from testUsernameIsAvailable--
-Available for: test
---Output from testUsernameIsNotAvailable--
-Available for: test_user
-

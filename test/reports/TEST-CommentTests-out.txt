@@ -1,7 +1,0 @@
---Output from testToString--
---Output from testPluginToComment--
---Output from testCommentToPlugin--
---Output from testValidComment--
---Output from testEmptyContributor--
---Output from testEmptyComment--
---Output from testCascadeDelete--

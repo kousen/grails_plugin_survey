@@ -44,7 +44,7 @@ class RetrieverService {
 
     def getLink(p) {
         def info = "cmd /c grails plugin-info ${p.name}".execute().text
-        info.eachMatch(/\b(.*\+Plugin)\b/) { line ->
+        info.eachMatch(/\b(.*\+(P|p)lugin)\b/) { line ->
             p.link = line[0].split()[-1]
         }
         println ("${p.name} now linked to ${p.link}")
